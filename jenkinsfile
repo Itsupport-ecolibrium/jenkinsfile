@@ -1,0 +1,10 @@
+pipeline {
+    agent { TestProject Agent }
+    stages {
+        stage('build') {
+            steps {
+               runtpjob jobId: 'DR6ThDV9vEapkgU6Fkxomw', projectId: 'wUABLaZz4E6-PDmtFkrdiw', waitJobFinishSeconds: 30 
+            }
+        }
+    }
+}
